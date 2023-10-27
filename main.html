@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>GH</title>
+    <meta charset="UTF-8">
+    <title>GH</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <!-- Логотип Coffee House Gray House -->
+    <div class="coffee-logo-container">
+        <img class="coffee-logo" src="img/logo.png" alt="Coffee House Gray House Logo">
+    </div>
+
+    <!-- Текст "Меню" на английском языке -->
+    <div class="language-selection">
+        <p>MENU</p>
+        <h1>Choose your language</h1>
+    </div>
+
+    <!-- Кнопки для выбора языка в вертикальном порядке -->
+<div class="language-selection">
+    <button onclick="changeLanguage('en')">English</button>
+    <button onclick="changeLanguage('fr')">French</button>
+    <button onclick="changeLanguage('de')">German</button>
+    <button onclick="changeLanguage('es')">Spanish</button>
+</div>
+
+    <script>
+        // Функция для изменения текста кнопки в зависимости от выбранного языка
+        function changeLanguage(language) {
+            alert('Language Selected: ' + language);
+            // Здесь вы можете добавить код для обработки выбранного языка
+        }
+    </script>
+</body>
+</html>

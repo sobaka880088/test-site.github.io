@@ -1,0 +1,72 @@
+/* Центрирование содержимого по горизонтали и отступ сверху */
+body {
+  text-align: center;
+  padding-top: 2cm;
+  background-color: #948b8bde; /* Цвет фона */
+}
+
+/* Центрирование логотипа */
+.coffee-logo-container {
+  margin: 0 auto;
+}
+
+/* Центрирование текста "Меню" и кнопок выбора языка */
+.language-selection {
+  margin: 0 auto;
+}
+
+/* Сделаем кнопки языка вертикально и горизонтально выравненными по центру */
+.language-selection {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+/* Стилизация кнопок выбора языка */
+.language-selection button {
+  background-color: #000000; /* Белый фон */
+  color: #ffffff; /* Черный текст */
+  width: 400px; /* Ширина 4 см */
+  height: 100px; /* Высота 1 см */
+  font-size: 50px; /* Размер текста */
+  border: none; /* Убираем границу кнопки */
+  margin: 10px 0; /* Отступ между кнопками */
+  padding: 5px 10px; /* Отступы внутри кнопки */
+  text-transform: uppercase; /* Преобразование текста в верхний регистр */
+  transition: transform 0.2s, box-shadow 0.2s; /* Плавные переходы для эффекта */
+}
+
+
+.language-selection button:hover {
+  transform: scale(1.1); /* Увеличение размера при наведении */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Тень при наведении */
+}
+
+
+/* Стилизация текста "Menu"  */
+.language-selection p {
+  color: #000; /* Черный цвет текста */
+  font-family: Bodoni MT, sans-serif; /* Устанавливаем шрифт (в данном случае Arial) */
+  font-size: 72px; /* Размер текста, например, 40 пикселей (можете изменить по вашему выбору) */
+  font-weight: bold; /* Делаем текст жирным */
+}
+
+
+/* Стили для фона на десктопных устройствах */
+body {
+  background-image: url('img/g.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Стили для фона на мобильных устройствах */
+@media screen and (max-width: 767px) {
+  body {
+    background-size: contain; /* Адаптируем размер изображения для мобильных устройств */
+    background-attachment: scroll; /* Позволяем фону прокручиваться на мобильных устройствах */
+  }
+}
